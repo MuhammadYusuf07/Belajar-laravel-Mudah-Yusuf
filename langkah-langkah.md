@@ -81,11 +81,23 @@ informasi : ini data mahasiswa
 
 ## MEMBUAT ROUTE
 - dimulai dari membuat controller
-- menambahkan route di ```web.php``` dan mengimport controllernya dengan ```extension ```PHP Intelephense``` 
-- mengatur ```return view('matakuliah_index');`` indexnya
+- menambahkan route di ```web.php``` dan mengimport controllernya dengan extension ```PHP Intelephense```
+- mengatur ```return view('matakuliah_index');``` indexnya
 
 - untuk melihat route list apa saja yang sudah dibuat
 
 ```
 php artisan route:list
 ```
+
+***
+Kode @extends(‘mylayout’) akan memberitahukan kepada laravel bahwa view pasien_index adalah
+turuan dari mylayout semua kode yang berada diantara @section(‘content’) dan @endsection akan
+ditampilkan di yield(‘content’) mylayout
+***
+
+**untuk mengecek code apa sajakah yang sudah diproses laravel, sudah sesuaikah dengan yang kita inginkan**
+``` ctrl + u
+```
+
+``{{ $title ?? '' }}`` kalo ada variabel title maka tampilkan , jika tidak ada maka kosong
