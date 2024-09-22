@@ -1,9 +1,26 @@
+url : /matakuliah
+informasi : ini data matakuliah
+1. Buat Controller : MatakuliahController
+    ```
+    php artisan make:controller MatakuliahController -r
+    ```
+2. buat view
+    ```
+    php artisan make:view matakuliah_create
+    ```
+3. buat route
+4. buat function create
+5. modifikasi view
+
+
+
+
 url: /dosen/create
 informasi: ini form dosen
 
 1. Buat Controller : DosenController
     ```
-    php artisan make:controller DosenControllerController
+    php artisan make:controller DosenController
     ```
 2. buat view
     ```
@@ -18,7 +35,7 @@ informasi: ini data dosen
 
 1. Buat Controller : DosenController
     ```
-    php artisan make:controller DosenControllerController
+    php artisan make:controller DosenController
     ```
 2. buat view
     ```
@@ -60,3 +77,15 @@ informasi : ini data mahasiswa
 3. buat route
 4. buat function index
 5. modifikasi view
+
+
+## MEMBUAT ROUTE
+- dimulai dari membuat controller
+- menambahkan route di ```web.php``` dan mengimport controllernya dengan ```extension ```PHP Intelephense``` 
+- mengatur ```return view('matakuliah_index');`` indexnya
+
+- untuk melihat route list apa saja yang sudah dibuat
+
+```
+php artisan route:list
+```
