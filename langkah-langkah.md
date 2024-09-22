@@ -96,8 +96,6 @@ turuan dari mylayout semua kode yang berada diantara @section(‘content’) dan
 ditampilkan di yield(‘content’) mylayout
 ***
 
-**untuk mengecek code apa sajakah yang sudah diproses laravel, sudah sesuaikah dengan yang kita inginkan**
-``` ctrl + u
-```
+**untuk mengecek code apa sajakah yang sudah diproses laravel, sudah sesuaikah dengan yang kita inginkan ``ctrl + u``**
 
 ``{{ $title ?? '' }}`` kalo ada variabel title maka tampilkan , jika tidak ada maka kosong
