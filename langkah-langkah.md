@@ -99,3 +99,12 @@ ditampilkan di yield(‘content’) mylayout
 **untuk mengecek code apa sajakah yang sudah diproses laravel, sudah sesuaikah dengan yang kita inginkan ``ctrl + u``**
 
 ``{{ $title ?? '' }}`` kalo ada variabel title maka tampilkan , jika tidak ada maka kosong
+
+
+**untuk cek database sudah terkoneksi atau belum**
+
+```php artisan db:monitor``` 
+
+*** 
+```ctrl+shift+i``` untuk duplikat code
+***
