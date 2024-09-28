@@ -126,5 +126,4 @@ php artisan lang:update
 ` protected $guarded =[];` untuk menyimpan ke data base di file pasien.php **Properti $guarded digunakan agar kita bisa melakukan mass assignment atau menyimpan data pada
 banyak kolom secara bersamaan menggunakan array atau objek. Dengan menambahkan guarded = []
 maka semua kolom bisa diisi secara bersamaan menggunakan array**
-
-
+`dd($pasien)` untuk lihat isi dari variabel pasien

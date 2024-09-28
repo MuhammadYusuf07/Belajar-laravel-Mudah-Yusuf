@@ -21,7 +21,14 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->no_pasien }}</td>
-                            <td>{{ $item->nama }}</td>
+                            <td>
+                                @if ($item->foto)
+                                    <a href="{{ Storage::url($item->foto) }}" target="blank">
+                                        <img src="{{ Storage::url($item->foto) }}" width="50">
+                                    </a>
+                                @endif
+                                {{ $item->nama }}
+                            </td>
                             <td>{{ $item->umur }}</td>
                             <td>{{ $item->jenis_kelamin }}</td>
                             <td>{{ $item->created_at }}</td>
