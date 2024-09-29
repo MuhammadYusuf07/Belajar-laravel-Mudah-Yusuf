@@ -32,7 +32,18 @@
                             <td>{{ $item->umur }}</td>
                             <td>{{ $item->jenis_kelamin }}</td>
                             <td>{{ $item->created_at }}</td>
-                            <td></td>
+                            <td>
+                                <a href="/pasien/{{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+
+                                <form action="/pasien/{{ $item->id }}" method="POST" class="d-inline">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-danger btn-sm ml-2"
+                                        onclick="return confirm('Anda Yakin ?')">
+                                        Hapus</button>
+                                </form>
+
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
