@@ -100,11 +100,13 @@ ditampilkan di yield(‘content’) mylayout
 
 **untuk cek database sudah terkoneksi atau belum**
 
-`php artisan db:monitor`
+```
+php artisan db:monitor
+```
 
 ---
 
-`ctrl+shift+i` untuk duplikat code
+`alt+shift+tombo atas/ bawah` untuk duplikat code
 
 ---
 
@@ -129,5 +131,10 @@ maka semua kolom bisa diisi secara bersamaan menggunakan array**
 
 ```
 dd($pasien)
-``` 
+```
+
 untuk lihat isi dari variabel pasien
+
+**middleware digunakan untuk melindungi data, misal ada user yang belum login jadi dia tidak bisa melihat datanya**
+
+

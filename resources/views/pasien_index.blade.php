@@ -1,8 +1,8 @@
-@extends('mylayout', ['title' => 'Data Pasien '])
+@extends('layouts.app', ['title' => 'Data Pasien '])
 @section('content')
     <div class="card">
+        <h5 class="card-header">Data Pasien</h5>
         <div class="card-body">
-            <h3>Data pasien</h3>
             <a href="/pasien/create" class="btn btn-primary">Tambah Data</a>
             <table class="table table-striped">
                 <thead>

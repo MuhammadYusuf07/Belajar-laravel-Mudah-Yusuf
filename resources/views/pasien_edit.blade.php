@@ -1,8 +1,8 @@
-@extends('mylayout')
+@extends('layouts.app')
 @section('content')
     <div class="card">
+        <h5 class="card-header">Edit Data Pasien : {{ strtoupper($pasien->nama) }}</h5>
         <div class="card-body">
-            <h5 class="card-title">Edit Data Pasien : {{ strtoupper($pasien->nama) }}</h5>
             <form action="/pasien/{{ $pasien->id }}" method="POST" enctype="multipart/form-data">
                 @method('put')
                 @csrf
